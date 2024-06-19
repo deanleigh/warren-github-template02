@@ -1,0 +1,15 @@
+{
+    "$schema": "../../warren.github.template02.Website/umbraco-package-schema.json",
+    "id": "warren.github.template02",
+    "name": "warren.github.template02",
+    "allowPackageTelemetry": true,
+    "version": "1.0.0",
+    "extensions": [
+        {
+          "name": "warren.github.template02 EntryPoint",
+          "alias": "warren.github.template02.entrypoint",
+          "type": "backofficeEntryPoint",
+          "js": "/app_plugins/warren.github.template02/warren.github.template02.js"
+        }
+      ]
+}
