@@ -1,10 +1,9 @@
-import { LitElement, css, html, customElement} from "@umbraco-cms/backoffice/external/lit";
-import { UmbElementMixin } from "@umbraco-cms/backoffice/element-api";
+import { LitElement as e, html as t } from "@umbraco-cms/backoffice/external/lit";
+import { UmbElementMixin as i } from "@umbraco-cms/backoffice/element-api";
 import "@umbraco-cms/backoffice/log-viewer";
-export class DashboardChartElement extends UmbElementMixin(LitElement) {
-
-    render() {
-        return html`
+class a extends i(e) {
+  render() {
+    return t`
             <uui-box headline="Dashboard with Pie Chart" style="margin:20px;">
                 <p>Hi Dean - put your webcomponent inside this markup</p>                
             </uui-box>
@@ -19,22 +18,16 @@ export class DashboardChartElement extends UmbElementMixin(LitElement) {
             <measure-bar></measure-bar>
             </uui-box>
         `;
-    }
-    // This is the function for the test button
-    showAlert() {
-      alert('Hello Dean!');
+  }
+  // This is the function for the test button
+  showAlert() {
+    alert("Hello Dean!");
   }
   // This is the function for Divinator - Web Component 0.0.3
-  
-
-
   // End Divinator - Web Component 0.0.3
 }
-
-export default DashboardChartElement;
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'dashboard-chart': DashboardChartElement;
-  }
-}
+export {
+  a as DashboardChartElement,
+  a as default
+};
+//# sourceMappingURL=dashboard.chart.element-DBFV442x.js.map
